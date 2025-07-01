@@ -70,7 +70,7 @@
             if(validateEmail($("#email").val())== false){
                 errormesage += "<p> Please enter a valid email address.</P>";
             }
-            if($("#phoneno").val().length < 10 && $.isNumeric($("#phoneno").val())){
+            if($("#phoneno").val().length > 10 && $.isNumeric($("#phoneno").val())){
                 errormesage += "<p> Please enter a valid phone number.</P>";
             }
             if($("#password").val()!= $("#confirmpassword").val()){
